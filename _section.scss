@@ -1,19 +1,20 @@
 section {
     background-color: #181818;
-    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .recipe-container {
-    width: 80vw;
-    height: 80vh;
+    width: 80%;
+    max-height: 80vh;
+    border-radius: 10px;
     border: 3px solid #DB7100;
-    margin: auto;
+    margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
 }
@@ -50,6 +51,7 @@ section {
     img {
         max-width: 90%;
         border: 2px solid #313131;
+        border-radius: 10px;
     }
 
 }
@@ -61,6 +63,7 @@ section {
     grid-column: 1 / 2;
     grid-row: 3;
     color: #D2B68A;
+    align-self: center;
 
     img {
         margin-right: 1em;
